@@ -4,32 +4,32 @@
 		"icon": "images/icon.png",
 		"iconSmall": "images/icon_small.png"
 	},
-	"type": "<TYPE, FOR CUSTOM ACTIVITY USE RESTDECISION>",
+	"type": "RestDecision",
 	"lang": {
 		"en-US": {
-			"name": "<CUSTOM ACTIVITY NAME>",
-			"description": "<CUSTOM ACTIVITY DESCRIPTION>"
+			"name": "TestNosSms",
+			"description": "Test building a SMS app"
 		}
 	},
 	"workflowApiVersion": "1.1",
 	"configurationArguments": {
 		"applicationExtensionKey": "<YOUR APPLICATION EXTENSION KEY HERE>",
 		"save": {
-			"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/activity/save",
+			"url": "https://localhost:8080/activity/save",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
 			"customerKey": "<EXTERNAL KEY OF THE SALT KEY FOR THE JWT>"
 		},
 		"publish": {
-			"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/activity/publish",
+			"url": "https://localhost:8080/activity/publish",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
 			"customerKey": "<EXTERNAL KEY OF THE SALT KEY FOR THE JWT>"
 		},
 		"validate": {
-			"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/activity/validate",
+			"url": "https://localhost:8080/activity/validate",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
@@ -70,7 +70,7 @@
 		"execute": {
 			"inArguments": [],
 			"outArguments": [],
-			"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/activity/execute",
+			"url": "https://localhost:8080/activity/execute",
 			"verb": "POST",
 			"body": "",
 			"header": "",
@@ -81,7 +81,7 @@
 		}
 	},
 	"edit": {
-		"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/index.html",
+		"url": "https://localhost:8080/index.html",
 		"height": 200,
 		"width": 500
 	}
